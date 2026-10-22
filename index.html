@@ -15,7 +15,6 @@
                     <li><a href="#Nosotros">Nosotros</a></li>
                     <li><a href="#Catalogo">Catalogo</a></li>
                     <li><a href="#Ubicacion">Ubicacion</a></li>
-                    <li><a href="#Comentario">Comentarios</a></li>
                     <li><a href="#Formulario">Formulario</a></li>
                 </ul>
             </nav>
@@ -112,7 +111,13 @@
                             <option value="macana">Macana</option>
                         </select>
 
-                        <label>Presupuesto aproximado</label>
+                        <label for="presupuesto">Presupuesto aproximado</label>
+                        <input id="presupuesto" name="presupuesto" type="range" min="5" max="90" step="5" value="40">
+
+                        <label for="comentarios">Detalles o Requerimientos Especiales</label>
+                        <textarea id="comentarios" name="comentarios" rows="4" required></textarea>
+
+                        <button type="submit">Enviar Cotización</button>
 
                     </fieldset>
                 </form>
