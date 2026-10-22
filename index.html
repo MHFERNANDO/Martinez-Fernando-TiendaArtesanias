@@ -46,14 +46,26 @@
                         <tr>
                             <td>Sombrero de Paja Toquilla</td>
                             <td>Elaborada a mano con fibra de Paja Toquilla.</td>
-                            <td><img src="img/sombrero.webp"> </td>
-                            <td>60</td>
+                            <td><img src="img/sombrero.webp" alt="Sombrero"> </td>
+                            <td>$30 - $90</td>
                         </tr>
                         <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td>Joyeria en Filigrama</td>
+                            <td>Tradicionales piezas de plata trabajadas con hilos delgadisimos entrejidos en forma de flores</td>
+                            <td><img src="img/joyeria.jpg" alt="Joyeria"></td>
+                            <td>$20 - $60</td>
+                        </tr>
+                        <tr>
+                            <td>Cerámica Artesanal</td>
+                            <td>Alfarería moldeada a mano y en torno, cocida en hornos tradicionales y decorada con esmaltes</td>
+                            <td><img src="img/ceramica.jpg" alt="Ceramica"></td>
+                            <td>$5 - $50</td>
+                        </tr>
+                        <tr>
+                            <td>Macana</td>
+                            <td>Chal o paño tejido con hilos teñidos mediante la ancestral técnica del Ikat</td>
+                            <td><img src="img/macana.jpg" alt="Macana"></td>
+                            <td>$10 - $40</td>
                         </tr>
                     </tbody>
                 </table>
@@ -77,24 +89,32 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4026.225243186011!2d-79.00706958942743!3d-2.8974171970668636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91cd181170d314bd%3A0xecfe27b0240b68a7!2sParque%20Calder%C3%B3n!5e1!3m2!1ses-419!2sec!4v1792636283250!5m2!1ses-419!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
             </section>
 
-            <article id="Comentario">
-                <h2>Nuestros clientes opinan</h2>
-
-            </article>
 
             <section id="Formulario">
+                <h2>Cotiza tu pedido</h2>
                 <form action="#" method="post">
-                <label for="nombre">Nombre completo</label>
-                <input id="nombre" name="nombre" type="text"
-                        required minlength="3" autocomplete="name">
-                <label for="correo">Correo electrónico</label>
-                <input id="correo" name="correo" type="email"
-                required>
-                <label for="curso">Curso</label>
-                <select id="curso" name="curso" required>
-                <option value="">Seleccione un curso</option>
-                </select>
-                <button type="submit">Inscribirme</button>
+                    <fieldset>
+
+                        <legend>Formulario de Cotizacion</legend>
+                        
+                        <label for="nombre">Nombre Completo</label>
+                        <input id="nombre" name="nombre" type="text" required minlength="3" autocomplete="name">
+                        
+                        <label for="correo">Correo Electronico</label>
+                        <input id="correo" name="correo" type="email" required autocomplete="email">
+
+                        <label for="categoria">Categoria de Artesania</label>
+                        <select id="categoria" name="categoria" required>
+                            <option value="">Seleccione una Opción</option>
+                            <option value="sombrero">Sombrero de Paja Toquilla</option>
+                            <option value="joyeria">Joyeria de Filigrama</option>
+                            <option value="ceramica">Ceramica Artesanal</option>
+                            <option value="macana">Macana</option>
+                        </select>
+
+                        <label>Presupuesto aproximado</label>
+
+                    </fieldset>
                 </form>
             </section>
         </main>
