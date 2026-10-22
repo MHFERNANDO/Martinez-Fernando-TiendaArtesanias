@@ -74,7 +74,95 @@ main {
     main {
         grid-template-columns: 2fr 1fr;
     }
-    #Catalogo {
+    #Nosotros,#Ubicacion,#Catalogo {
         grid-column: span 2;
     }
+    #Comentario{
+        max-width: 85%;
+        justify-self: start;
+    }
+    
 }
+
+
+main section, main article {
+    background-color: var(--color-blanco);
+    padding: 1.5rem;
+    border-radius: 8px;
+    font-size: 1.5rem;
+}
+main p{
+    margin-bottom: 1rem;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    font-size: 0.95rem;
+}
+caption{
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    text-align: left;
+    color: var(--color--pimario);
+    font-size: 1.5rem;
+}
+th,td{
+    border: 1px solid #ddd;
+    padding: 0.75rem;
+    text-align: left;
+    vertical-align: middle;
+}
+th{
+    background-color: var(--color--pimario);
+    color: var(--color-blanco);
+}
+td img{
+    width: 120px;
+    height: 120px;
+}
+#Ubicacion {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: stretch;
+}
+#Ubicacion h3 {
+    padding-bottom: 1.5rem;
+    color: var(--color--pimario);
+}
+
+#Ubicacion aside {
+    flex: 1 1 300 px;
+    border-left: 4px solid var(--color-secundario);
+    padding: 1rem;
+}
+
+#Ubicacio iframe {
+    flex: 1 1 300px;
+    height: 320px;
+}
+
+#Comentario blockquote {
+    margin-top: 1.2rem;
+    padding: 1rem 1.2rem;
+    border-left: 4px solid var(--color-secundario);
+    background-color: var(--color-fondo);
+}
+#Comentario blockquote p {
+    font-style: italic;
+    margin-bottom: 0.5rem;
+}
+#Comentario blockquote footer {
+    font-size: 1.2rem;
+    color: #555;
+    text-align: right;
+}
+#Comentario blockquote cite {
+    font-style: normal;
+    font-weight: bold;
+    color: var(--color--pimario);
+}
+
